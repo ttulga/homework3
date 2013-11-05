@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,900);
+
+body {
+	background-image: url(../img/pizza1.jpg);
+	background-attachment: fixed;
+	font-family: 'Stint Ultra Expanded', sans-serif;
+	font-size: 18px;
+}
+
+.navbar {
+	background-color: #5D2F8C;
+	clear: both;
+	border-color: #FFCE47!important;
+}
+
+.active a {
+	background-color: #FFCE47 !important;
+} 
+
+.page-header img {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin-top: 40px;
+
+	display: inline-block;
+	padding: 10px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2 ease;
+
+}
+
+:focus {
+	color: #EF3737;
+}
+.page-header {
+	font-family: 'Ruda', sans-serif;
+	color: #5D2F8C;
+	text-shadow: 2px 2px #FFCE47;
+}
+
+.hours {
+	float: right;
+	margin-top: 40px;
+	margin-right: 30px;
+}
+
+.description {
+	float: left;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.description h1 {
+	font-family: 'Oleo Script', sans-serif;
+	font-size: 300%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h2, h3 {
+	font-family: 'Stint Ultra Expanded', sans-serif;
+}
+
+.description p {
+	font-size: 115%;
+}
+
+.order {
+	width: 30%;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+address p,
+.row,
+.about-content,
+.footer p,
+.hyperlink:hover {
+	color: #FFF;
+}
+
+.video {
+	float: right;
+}
+
+/* deleted margin bottom that came from bootstrap */
+p {
+	margin: 0px;
+}
+
+.row,
+.about-content,
+address {
+	margin-bottom: 50px;
+	text-shadow: 2px 2px #5D2F8C;
+}
+
+.map {
+	margin-bottom: 100px;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	bottom: 0px;
+}
+
+.footer {
+	clear: both;
+	border-style:solid;
+	border-top:thin double;
+	border-color: #FFCE47;
+	font-style: italic;
+	font-size: 70%;
+	background-color: #5D2F8C;
+	position: relative;
+	width: 100%;
+}
+
+.footer p {
+	display: inline-block;
+	padding: 5px;
+}
+
+small {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.hyperlink {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.page-header img:hover {
+	box-shadow: 2px, 2px, 6px #555;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
