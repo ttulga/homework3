@@ -26,8 +26,8 @@ function render(pizzas) {
 
     $.each(pizzas, function(){
         $instance = $template.clone();
-        $instance.find('.name').html(this.first);
-        $instance.find('.description').html(this.last);
+        $instance.find('.name').html(this.name);
+        $instance.find('.description').html(this.description);
       
       /*  $instance.find('.pic').attr({
             src: this.pic,
