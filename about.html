@@ -1,45 +1,56 @@
 <!doctype html>
 <html>
 	<head>
-		<!-- moved header to server side includes -->
-		<!--#include virtual="inc/header.html" -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Dawg Pizza">
+		<meta name="author" content="ttulga">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+		<title>Dawg Pizza</title>
+		<link rel="shortcut icon" href="img/logo.png">
+
+		<!-- hot link to Bootstrap stylesheet -->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<div class="container">
-			<div class="page-header">
-				<a href="index.shtml"><img class="logo" src="img/logo.png" alt="logo"></a>
+			<header>
+				<div class="page-header">
+					<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
 
-				<div class="description">
-					<h1 tabindex="5">Dawg Pizza</h1>
-					<p>Awesome wood-fired pizza with fresh ingredients baked to order.</p> 
-					<p>Come in and eat, or call us for delivery!</p>
-				</div>	
+					<div class="description">
+						<h1 tabindex="5">Dawg Pizza</h1>
+						<p>Awesome wood-fired pizza with fresh ingredients baked to order.</p> 
+						<p>Come in and eat, or call us for delivery!</p>
+					</div>	
 
-				<div class="hours" tabindex="6">
-					<p>Open MON - SAT</p> 
-					<p>10 AM to 11 PM</p> 
-					<p>(206)555-1212</p>
+					<div class="hours" tabindex="6">
+						<p>Open MON - SAT</p> 
+						<p>10 AM to 11 PM</p> 
+						<p>(206)555-1212</p>
+					</div>
 				</div>
-			</div>
 
-			<nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".dawgpizza-navbar-menu">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+				<nav class="navbar navbar-default" role="navigation">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".dawgpizza-navbar-menu">
+	                        <span class="sr-only">Toggle Navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                </div>
 
-                <div class="collapse navbar-collapse dawgpizza-navbar-menu">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.shtml">Home</a></li>
-                        <li><a href="menu.shtml">Menu</a></li>
-                        <li><a href="about.shtml">About Us</a></li>                   
-                    </ul>
-                </div>
-            </nav>
+	                <div class="collapse navbar-collapse dawgpizza-navbar-menu">
+	                    <ul class="nav navbar-nav">
+	                        <li class="active"><a href="index.html">Home</a></li>
+	                        <li><a href="menu.html">Menu</a></li>
+	                        <li><a href="about.html">About Us</a></li>          
+	                    </ul>
+	                </div>
+	            </nav>
+	        </header>
 
 			<img class="order" src="img/pizza-oven.jpg" alt="pizza">
 
@@ -61,8 +72,11 @@
 			<!-- used wrapper div (credit to Staffan) to keep footer box fixed to max width of rest of container -->
 			<div class="wrapper">
 				<div class="footer">
-					<!-- moved header to server side includes -->
-    				<!--#include virtual="inc/footer.html" -->
+					<!-- &nbsp allows the spacing to stay -->
+					<p>Call us for delivery: 206-555-1212&nbsp;  |   </p>
+					<p><a class="hyperlink" href="mailto:dawgpizzaseattle@gmail.com">Email Us&nbsp;  |   </a></p>
+					<p><a class="hyperlink" href="twitter.com/DawgPizzaSea">Follow Us On Twitter&nbsp;   |   </a></p>
+					<p>&copy;2013 Dawg Pizza</p>
 				</div>
 			</div>
     	</div>
