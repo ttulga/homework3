@@ -36,7 +36,7 @@ function renderDrinks(entry) {
 
         clonedTemplate = template.clone();
         clonedTemplate.find('.name').html(drink.name);
-        clonedTemplate.find('.prices').html(drink.price);
+        clonedTemplate.find('.prices').html("$" + drink.price);
         clonedTemplate.removeClass('template-pizza');
         container.append(clonedTemplate);
     } //for each drink
@@ -53,7 +53,7 @@ function renderDesserts(entry) {
 
         clonedTemplate = template.clone();
         clonedTemplate.find('.name').html(dessert.name);
-        clonedTemplate.find('.prices').html(dessert.price);
+        clonedTemplate.find('.prices').html("$" + dessert.price);
         clonedTemplate.removeClass('template-pizza');
         container.append(clonedTemplate);
     } //for each dessert

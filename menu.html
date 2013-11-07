@@ -20,16 +20,8 @@
 					<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
 
 					<div class="description">
-						<h1 tabindex="5">Dawg Pizza</h1>
-						<p>Awesome wood-fired pizza with fresh ingredients baked to order.</p> 
-						<p>Come in and eat, or call us for delivery!</p>
+						<p>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</p> 
 					</div>	
-
-					<div class="hours" tabindex="6">
-						<p>Open MON - SAT</p> 
-						<p>10 AM to 11 PM</p> 
-						<p>(206)555-1212</p>
-					</div>
 				</div>
 
 				<nav class="navbar navbar-default" role="navigation">
@@ -52,34 +44,53 @@
 	            </nav>
 	        </header>
 
-			<img class="order" src="img/pizza-order.jpg" alt="pizza">
 
-			<div class="container-pizza"></div>
-			<div class="container-drinks"></div>
-			<div class="container-desserts"></div>
-		
 
+			<div class="row">
+				 <div class="pictures">
+				 	<img class="order" src="img/pizza-order.jpg" alt="pizza">
+
+					<img class="order" src="img/menu-pizza1.jpg" alt="pizza">	
+
+					<img class="order" src="img/menu-pizza2.jpg" alt="pizza">
+				 </div>
+					        
+				<div class="col-md-8">
+					<div class="container-pizza"><h1>Pizzas</h1></div>
+				</div>
+
+				<img class="order" src="img/soda.jpg" alt="soda">
+				<div class="col-md-8">
+					<div class="container-drinks"><h1>Drinks</h1></div>
+				</div>
+
+				<img class="order" src="img/dessert.jpg" alt="dessert">
+				<div class="col-md-8">
+					<div class="container-desserts"><h1>Desserts</h1></div>
+				</div>
+			</div>
+	
 			<!-- templates for entries -->
 			<!-- used to get code, doesnt actually display -->
-			<div class="template-pizza">
-				<div class="name"></div>
-				<div class="description"></div>
-				<div class="item">
+			<dl class="template-pizza">
+				<dt class="name"></dt>
+				<dd class="description"></dd>
+				<dd class="item">
 					<span class="small"></span> 
 					<span class="medium"></span> 
 					<span class="large"></span>
-				</div>
-			</div>
+				</dd>
+			</dl>
 
-			<div class="template-drinks">
-				<div class="name"></div>
-				<div class="prices"></div>
-			</div>
+			<dl class="template-drinks">
+				<dt class="name"></dt>
+				<dd class="prices"></dd>
+			</dl>
 
-			<div class="template-desserts">
-				<div class="name"></div>
-				<div class="prices"></div>
-			</div>
+			<dl class="template-desserts">
+				<dt class="name"></dt>
+				<dd class="prices"></dd>
+			</dl>
 			
 			
 	    	<footer>		
