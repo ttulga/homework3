@@ -9,8 +9,6 @@
 
 /* use more of a solid color due to feeback */
 body {
-	/*background-image: url(../img/background4.png);
-	background-attachment: fixed;*/
 	background-color: #474442;
 	font-family: 'Josefin Slab', serif;
 	font-size: 24px;
@@ -46,6 +44,7 @@ header {
 	margin-bottom: 0;
 }
 
+/* used !important to override a lot of bootstraps styles */
 .description {
 	margin: 0 auto !important;
 }
@@ -61,6 +60,7 @@ header {
 	background-color: transparent !important;
 } 
 
+/* float: none to clear bootstrap float, clear: both did not work */
 ul {
 	display: inline-block;
 	margin: 0 auto !important;
@@ -85,19 +85,9 @@ li a:hover {
 
 /* ---------Home--------- */
 .home-picture {
-	width: 80%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-}
-
-.hours {
-	float: left;
-}
-
-.video {
-	float: right;
+	width: 45%;
+    margin: 0 auto;
+    margin-bottom: 300px;
 }
 
 iframe {
@@ -105,10 +95,11 @@ iframe {
 	height: 225px;	
 }
 
-.map {
-	margin-bottom: 100px;
-	clear: both;
+.left {
+	position: absolute;
+	top: 350px;
 }
+
 
 /* ---------About--------- */
 .order {
@@ -125,8 +116,6 @@ iframe {
 
 address {
 	margin-bottom: 50px;
-	clear: both;
-	float: left;
 }
 
 /* overriding bootstrap font for h1,h2... */
@@ -162,7 +151,7 @@ h1, h2 {
 
 small a {
 	text-decoration: none;
-	color: #000;
+	color: #000 !important;
 }
 
 .hyperlink {
@@ -173,4 +162,10 @@ small a {
 .hyperlink:hover {
 	color: blue;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	.map, .video {
+		display: none;
+	}
 }

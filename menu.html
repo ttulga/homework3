@@ -7,10 +7,8 @@
 		<meta name="viewport" content="width=device-width, intial-scale=1.0"> 
 		<title>Dawg Pizza</title>
 		<link rel="shortcut icon" href="img/logo.png">
-
 		<!-- hot link to Bootstrap stylesheet -->
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
@@ -18,7 +16,6 @@
 			<header>
 				<div class="page-header">
 					<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-
 					<div class="description">
 						<p>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</p> 
 					</div>	
@@ -44,14 +41,11 @@
 	            </nav>
 	        </header>
 
-
-
+	        <!-- used cols to make space on right for pictures -->
 			<div class="row">
 				 <div class="pictures">
 				 	<img class="order" src="img/pizza-order.jpg" alt="pizza">
-
 					<img class="order" src="img/menu-pizza1.jpg" alt="pizza">	
-
 					<img class="order" src="img/menu-pizza2.jpg" alt="pizza">
 				 </div>
 					        
@@ -59,6 +53,8 @@
 					<div class="container-pizza"><h1>Pizzas</h1></div>
 				</div>
 
+				<!-- redundant, but had to use multiple col-md-8 classes to -->
+				<!-- put specific pictures next to parts of menu -->
 				<img class="order" src="img/soda.jpg" alt="soda">
 				<div class="col-md-8">
 					<div class="container-drinks"><h1>Drinks</h1></div>
@@ -82,6 +78,7 @@
 				</dd>
 			</dl>
 
+			<!-- this part is a little redundant, make into one somehow later -->
 			<dl class="template-drinks">
 				<dt class="name"></dt>
 				<dd class="prices"></dd>
@@ -105,7 +102,7 @@
 					</div>
 				</div>
 			</footer>
-    	</div>
+    	</div> <!-- container -->
 
     	<!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
